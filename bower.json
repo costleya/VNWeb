@@ -1,0 +1,31 @@
+{
+  "name": "VNWeb",
+  "version": "0.0.0",
+  "homepage": "https://github.com/weapon009/VNWeb",
+  "authors": [
+    "weapon009 <costley.aaron@gmail.com>"
+  ],
+  "description": "A Visual Novel runtime for the web using the latest web technologies",
+  "keywords": [
+    "html",
+    "javascript",
+    "css",
+    "polymer",
+    "web-components",
+    "visual_novel"
+  ],
+  "license": "GPLv3",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.4.2",
+    "core-elements": "Polymer/core-elements#~0.4.2",
+    "paper-elements": "Polymer/paper-elements#~0.4.2"
+  }
+}

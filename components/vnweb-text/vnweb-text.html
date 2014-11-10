@@ -1,0 +1,30 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<polymer-element name="vnweb-text">
+    <template>
+        <style>
+            :host
+            {
+                display: block;
+            }
+
+            #container
+            {
+                background-color: #ffffff;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+        <div id="container">
+            <pre>{{text}}</pre>
+        </div>
+    </template>
+    <script>
+        Polymer({
+            text: "Hello",
+            size: 30,
+            ready: function() {
+
+            }
+        });
+    </script>
+</polymer-element>

@@ -1,0 +1,36 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../vnweb-text/vnweb-text.html">
+<polymer-element name="vnweb-runtime">
+    <template>
+        <style>
+            :host
+            {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: green;
+                position: relative;
+                border-width: 2px;
+                border-color: #000000;
+                border-style: solid;
+            }
+
+            #gameText
+            {
+                position: absolute;
+                z-index: 100;
+                left: 0;
+                width: 100%;
+            }
+        </style>
+        <vnweb-text id="gameText" _style="height: {{gameTextHeight}}%; top: {{100 - gameTextHeight}}%;"></vnweb-text>
+    </template>
+    <script>
+        Polymer({
+            gameTextHeight: 30,
+            ready: function() {
+
+            }
+        });
+    </script>
+</polymer-element>
